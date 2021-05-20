@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/LHWOOD/NoteTaker-Expres.js#readme",
   "dependencies": {
-    "inquirer": "^8.0.0"
+    "inquirer": "^8.0.0",
+    "express": "^4.16.3"
   }
 }
