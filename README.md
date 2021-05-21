@@ -26,7 +26,7 @@ Node.js and Express.js are needed for this project to run.
 
 ## Usage
 
-Here is a link to the application on Heroku:
+Here is a link to the application on Heroku: https://still-ridge-44940.herokuapp.com/
 
 Here is a screenshot of the application: ![screenshot](public/images/screenshot.png)
 
