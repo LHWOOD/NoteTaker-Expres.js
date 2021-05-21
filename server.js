@@ -25,18 +25,29 @@ app.get("/notes", (req, res) =>
 
 app.get("/api/notes", (req, res) => {
   fs.readFile("./db/db.json", "utf8", (err, data) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    res.json(data);
+    if (err) throw err;
+    notes = JSON.parse(data);
+    res.json(notes);
   });
 });
 
 // app.post
-app.post("/notes", (req, res) => {
-  const newNote = req.body;
-  res.json(newNote);
+app.post("/api/notes", (req, res) => {
+  newNote = req.body;
+  fs.readFile(path.join(__dirname, "./db/db.json"), (err, data) => {
+    if (err) throw err;
+    notes = JSON.parse(data);
+    notes.push(newNote);
+    fs.writeFile(
+      path.join(__dirname, "./db/db.json"),
+      JSON.stringify(notes),
+      (err) => {
+        if (err) throw err;
+        console.log("updated notes");
+        res.json(notes);
+      }
+    );
+  });
 });
 
 //starts the server to begin listening
