@@ -2,6 +2,8 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+// const router = require("express").router;
+// const store = require("./db/db.json");
 
 //sets up the Express App
 const app = express();
@@ -32,6 +34,10 @@ app.get("/api/notes", (req, res) => {
 });
 
 // app.post
+app.post("/notes", (req, res) => {
+  const newNote = req.body;
+  res.json(newNote);
+});
 
 //starts the server to begin listening
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
