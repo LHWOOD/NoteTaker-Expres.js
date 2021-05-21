@@ -26,7 +26,9 @@ Node.js and Express.js are needed for this project to run.
 
 ## Usage
 
-TBD
+Here is a link to the application on Heroku:
+
+Here is a screenshot of the application: ![screenshot](public/assets/images/screenshot.png)
 
 ## Contributing
 
@@ -34,7 +36,7 @@ Please feel free to contribute relevant content for future deployments.
 
 ## Tests
 
-TBD
+No Jest testing have been performed at this time.
 
 ## License
 
@@ -43,5 +45,3 @@ This project is covered under the GPLv3 license.
 ## Questions
 
 Please reach out to me with any questions at hutsonwood@gmail.com. You can also check out my other projects at https://github.com/LHWOOD.
-
-# NoteTaker-Expres.js
