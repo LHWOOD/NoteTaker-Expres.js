@@ -28,7 +28,7 @@ Node.js and Express.js are needed for this project to run.
 
 Here is a link to the application on Heroku:
 
-Here is a screenshot of the application: ![screenshot](public/assets/images/screenshot.png)
+Here is a screenshot of the application: ![screenshot](public/images/screenshot.png)
 
 ## Contributing
 
